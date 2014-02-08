@@ -8,7 +8,7 @@
 " and various user comments.
 
 if exists("g:loaded_linuxsty")
-    finish
+    finish
 endif
 let g:loaded_linuxsty = 1
 
@@ -26,6 +26,7 @@ endfunc
 command! SetLinuxFormatting call SetLinuxFormatting()
 
 function s:LinuxSettings()
+    setlocal softtabstop=8
     setlocal tabstop=8
     setlocal shiftwidth=8
     setlocal textwidth=80
